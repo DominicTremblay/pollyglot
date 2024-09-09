@@ -29,6 +29,7 @@ export default {
 		
 		const openai = new OpenAI({
 			apiKey: env.OPENAI_API_KEY,
+			baseURL: `https://gateway.ai.cloudflare.com/v1/3be2381c987ace6d73d0179a6903bde6/pollyglot/openai`
 		});
 		
 		try {
@@ -38,7 +39,7 @@ export default {
 				messages: messages,
 			});
 
-			return new Response(JSON.stringify(response), { headers: corsHeaders })
+			return new Response(JSON.stringify(response.choices[0].message.content), { headers: corsHeaders })
 		} catch (err) {
 			return new Response(`Error: ${(err as Error).message}`);
 		}
