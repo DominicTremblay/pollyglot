@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <section id="container">
+    <div id="webcrumbs">
+      <div class="w-[380px] rounded-lg shadow-lg bg-neutral-50 p-4">
+        <header class="bg-blue-900 p-4 text-center rounded-t-lg">
+          <img src="/assets/parrot.png" alt="Polly" class="inline-block align-middle" width="40" height="40" />
+          <h1 class="inline-block align-middle font-title text-neutral-50 text-2xl ml-2">PollyGlot</h1>
+          <p class="text-neutral-50 text-sm">Perfect Translation Every Time</p>
+        </header>
+        <div class="mt-4">
+          <h2 class="font-title text-center text-blue-700">Text to translate <span class="inline-block">👇</span>
+          </h2>
+          <textarea class="w-full mt-2 mb-4 p-2 rounded-md border border-gray-300 bg-neutral-50" rows="3">How are you?</textarea>
+          <h2 class="font-title text-center text-blue-700">Select language <span class="inline-block">👇</span>
+          </h2>
+          <form class="mt-2 mb-4 p-2 rounded-md">
+            <div class="mb-2">
+              <input type="radio" id="french" name="language" value="french" />
+              <label for="french" class="ml-2">French <img src="/assets/fr-flag.png" alt="French"
+                  class="inline-block align-middle ml-1" width="24" height="24" /></label>
+            </div>
+            <div class="mb-2">
+              <input type="radio" id="spanish" name="language" value="spanish" />
+              <label for="spanish" class="ml-2">Spanish <img src="/assets/sp-flag.png" alt="Spanish"
+                  class="inline-block align-middle ml-1" width="24" height="24" /></label>
+            </div>
+            <div class="mb-2">
+              <input type="radio" id="japanese" name="language" value="japanese" />
+              <label for="japanese" class="ml-2">Japanese <img src="/assets/jpn-flag.png" alt="Japanese"
+                  class="inline-block align-middle ml-1" width="24" height="24" /></label>
+            </div>
+            <button type="submit" name="submitBtn" class="w-full bg-blue-600 text-neutral-50 py-2 rounded-md font-title">Translate</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>
